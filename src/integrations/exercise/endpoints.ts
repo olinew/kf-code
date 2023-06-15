@@ -4,9 +4,10 @@ import { EnhancedOutage, Outage, SiteInfo } from '../interfaces';
 import { handleRequestError } from './utils';
 
 const API_HEADER_NAME = 'x-api-key';
+const BASE_URL = 'https://api.krakenflex.systems/interview-tests-mock-api/v1';
 
 const axiosConfig: AxiosRequestConfig = {
-  baseURL: process.env.BASE_URL,
+  baseURL: BASE_URL,
   headers: {
     [API_HEADER_NAME]: process.env.API_KEY,
   },
